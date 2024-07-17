@@ -39,7 +39,7 @@ exports.ModifyMovie=function(req,res){
             res.status(500).send(err)
         }
         else{
-            res.json(result)
+            res.status(200).send(result)
         }
     })
 }
